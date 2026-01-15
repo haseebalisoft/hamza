@@ -782,13 +782,13 @@ export default function PortfolioV2() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-teal-400 to-indigo-500 flex items-center justify-center text-white font-bold">
-                HS
+                AR
               </div>
-              <span className="font-bold">Hason Shok</span>
+              <span className="font-bold">Afshae Re</span>
             </div>
 
             <div className="text-gray-500 dark:text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} Hason Shok. All rights reserved.
+              &copy; {new Date().getFullYear()} Afshae Re. All rights reserved.
             </div>
 
             <div className="flex gap-4 mt-4 md:mt-0">
@@ -811,7 +811,7 @@ export default function PortfolioV2() {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:hassonshok@gmail.com"
+                href="mailto:afshaere@gmail.com"
                 className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
                 aria-label="Send Email"
               >
