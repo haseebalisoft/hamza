@@ -76,82 +76,59 @@ export default function PortfolioV2() {
 
   const skills = [
     {
-      category: "Data Engineering & Arch",
-      items: ["ETL/ELT", "Data Lakehouse (Delta Lake)", "Data Modeling (Star/Snowflake)", "SCD Type I & II", "Partitioning", "Clustering"]
+      category: "Programming & Languages",
+      items: ["Python (Advanced)", "SQL (Expert)", "Scala", "Java (Basic)", "Bash/Shell"]
     },
     {
-      category: "Big Data & Distributed Processing",
-      items: ["Apache Spark (PySpark, Scala)", "Structured Streaming", "Hadoop (HDFS, Hive, MapReduce)", "Apache Flink", "Apache Beam", "Dask"]
+      category: "Big Data & Distributed Systems",
+      items: ["Apache Spark (Spark SQL, DataFrames)", "Hadoop (HDFS, Hive, YARN)", "Fault-tolerant Systems"]
     },
     {
-      category: "Streaming & CDC",
-      items: ["Apache Kafka", "Kafka Streams", "Kafka Connect", "Debezium", "AWS Kinesis", "Google Pub/Sub", "Event-Driven Arch"]
+      category: "Streaming & Event-Driven",
+      items: ["Apache Kafka", "Spark Structured Streaming", "Event-driven Architectures"]
     },
     {
       category: "Cloud Platforms",
-      items: ["AWS (Glue, EMR, Redshift, Athena)", "Azure (ADF, Databricks, Synapse)", "GCP (BigQuery, Dataflow, Composer)"]
+      items: ["AWS (S3, Glue, EMR, Redshift, Lambda, Athena)", "Azure (ADF, Synapse, ADLS Gen2)", "GCP (BigQuery, Dataflow, Storage)"]
     },
     {
-      category: "Orchestration & Analytics",
-      items: ["Apache Airflow", "dbt", "Prefect", "Dagster", "Tableau", "Power BI", "Superset"]
+      category: "Databases & Storage",
+      items: ["Snowflake", "Amazon Redshift", "Google BigQuery", "PostgreSQL", "MySQL", "MongoDB", "Parquet/ORC/Avro/JSON"]
     },
     {
-      category: "Programming & Databases",
-      items: ["Python", "SQL", "Scala", "Java", "Bash", "Snowflake", "PostgreSQL", "MongoDB", "Cassandra", "Oracle"]
+      category: "ETL & Orchestration",
+      items: ["Apache Airflow", "dbt", "AWS Glue", "Informatica"]
     },
     {
-      category: "DevOps & Automation",
-      items: ["CI/CD (GitHub Actions, Jenkins)", "Terraform", "Docker", "Kubernetes", "IaC"]
+      category: "Data Modeling",
+      items: ["Dimensional Modeling (Star/Snowflake)", "Analytics Data Marts", "SCD Type 1 & 2"]
     },
     {
-      category: "Governance & Security",
-      items: ["IAM/RBAC", "HIPAA/GDPR", "Great Expectations", "Data Lineage", "Audit Logging", "Encryption"]
+      category: "DevOps & Infrastructure",
+      items: ["Git", "CI/CD", "Docker", "Terraform"]
+    },
+    {
+      category: "BI & Data Quality",
+      items: ["Power BI", "Tableau", "Looker", "Data Governance", "Data Observability"]
     }
   ];
 
 
   const projects = [
     {
-      title: "Real-Time Patient Monitoring Platform",
-      description: "HIPAA-compliant platform processing 40K+ events/min from EHR & IoT systems. Reduced alert latency from 15 mins to <30s using Kafka and Spark Structured Streaming.",
-      technologies: ["Kafka", "Spark Structured Streaming", "Delta Lake", "Databricks", "Snowflake", "AWS", "Terraform"],
+      title: "Real-Time Analytics Data Pipeline",
+      description: "Built an end-to-end real-time data pipeline using Kafka, Spark Structured Streaming, and Snowflake. Implemented event ingestion, transformation, and storage to power near-real-time dashboards and alerting systems. Optimized streaming workloads for low latency.",
+      technologies: ["Kafka", "Spark Structured Streaming", "Snowflake", "Real-Time Analytics"],
       image: siukimage,
       github: "#",
       demo: "#",
       unavailableMessage: "Enterprise project, source code not public."
     },
     {
-      title: "Enterprise Data Lake Migration",
-      description: "Migrated 15+ years of legacy data to a modern Azure Lakehouse using ADF and Databricks. Reduced nightly batch runtimes by 60%.",
-      technologies: ["Azure Data Factory", "Databricks", "ADLS Gen2", "Synapse", "PySpark"],
+      title: "Cloud-Native Data Warehouse Platform",
+      description: "Designed and implemented a cloud-native data warehouse and lakehouse-style architecture using AWS and Snowflake. Developed ELT workflows with dbt and Airflow, applying star schema modeling. Enabled executive dashboards and self-service analytics.",
+      technologies: ["AWS", "Snowflake", "dbt", "Airflow", "Lakehouse"],
       image: pharmacyImage,
-      github: "#",
-      demo: "#",
-      unavailableMessage: "Enterprise project, source code not public."
-    },
-    {
-      title: "CDC-Based Data Replication Framework",
-      description: "Built a framework using Debezium and Kafka Connect to replicate PostgreSQL and MySQL data to Snowflake, reducing latency to <2 mins.",
-      technologies: ["Debezium", "Kafka Connect", "PostgreSQL", "MySQL", "Snowflake"],
-      image: cuihrportal,
-      github: "#",
-      demo: "#",
-      unavailableMessage: "Enterprise project, source code not public."
-    },
-    {
-      title: "Data Quality & Observability Platform",
-      description: "Implemented automated quality checks with Great Expectations and Airflow, covering 120+ rules. Reduced data quality incidents by 70%.",
-      technologies: ["Great Expectations", "Airflow", "Python", "Databricks", "Grafana"],
-      image: taskhero,
-      github: "#",
-      demo: "#",
-      unavailableMessage: "Enterprise project, source code not public."
-    },
-    {
-      title: "Cloud-Native Lakehouse Platform",
-      description: "Architected a 20TB+/month Lakehouse platform using Delta Lake and Databricks. Enabled both batch and real-time analytics with full CI/CD automation.",
-      technologies: ["Delta Lake", "Databricks", "GitHub Actions", "Docker", "Terraform"],
-      image: adzysGoods,
       github: "#",
       demo: "#",
       unavailableMessage: "Enterprise project, source code not public."
@@ -161,56 +138,42 @@ export default function PortfolioV2() {
   const education = [
     {
       period: "—",
-      title: "Bachelor's in Computer Science",
+      title: "Bachelor's Degree in Computer Science",
       institution: "University",
-      marks: "Specialized in Distributed Systems and Cloud Computing."
+      marks: "Specialized in Data Engineering and Cloud Computing."
     }
   ];
 
 
   const experience = [
     {
-      period: "12/2022 - Present",
-      title: "Lead Data Engineer",
-      company: "AGIT",
-      description: "Architected a 20TB+/month cloud-native Lakehouse platform. Led cross-functional teams, standardized observability layers, and implemented FinOps strategies reducing costs. Enforced HIPAA/GDPR compliance.",
-      technologies: ["Databricks", "Delta Lake", "Kafka", "Snowflake", "Terraform", "GitHub Actions"]
-    },
-    {
-      period: "11/2020 - 11/2022",
+      period: "12/2023 - Present",
       title: "Senior Data Engineer",
-      company: "Mountainise",
-      description: "Designed scalable ETL/ELT pipelines on AWS integrating 50+ data sources. Built CDC ingestion pipelines reducing latency to <2 mins. Optimized Spark workloads for 40% performance gains.",
-      technologies: ["AWS Glue", "Lambda", "EMR", "Snowflake", "Kafka", "Airflow", "dbt"]
+      company: "Alphabridge",
+      description: "Architected and owned end-to-end data platform design, delivering batch and streaming pipelines. Led migration to Snowflake, improving query performance by 40%. Built real-time ingestion pipelines with Kafka and Spark.",
+      technologies: ["Apache Spark", "Airflow", "Kafka", "AWS S3", "Snowflake"]
     },
     {
-      period: "10/2018 - 10/2020",
+      period: "05/2020 - 11/2023",
       title: "Data Engineer",
-      company: "SA Data Global",
-      description: "Migrated legacy SQL Server pipelines to Azure (ADF, Databricks, ADLS). Designed enterprise data warehouse schemas and tuned complex SQL queries reducing report runtimes by 70%.",
-      technologies: ["Azure Data Factory", "Azure Databricks", "ADLS Gen2", "SQL Server", "Azure DevOps"]
+      company: "AGIT",
+      description: "Designed and maintained scalable ELT pipelines using Python, SQL, and AWS Glue. Built analytics-ready datasets for Power BI. Increased data availability SLA from 95% to 99.9%. Reduced cloud costs by 20%.",
+      technologies: ["Python", "SQL", "AWS Glue", "Airflow", "Amazon Redshift", "Power BI"]
     },
     {
-      period: "04/2016 - 09/2018",
-      title: "Associate Data Engineer",
-      company: "Blue Peak",
-      description: "Built data ingestion pipelines using Python and Airflow. Worked with Hadoop ecosystem (HDFS, Hive). Supported GCP migration initiatives using BigQuery and Dataflow.",
-      technologies: ["Python", "Airflow", "Hadoop", "Hive", "GCP BigQuery", "Dataflow"]
-    },
-    {
-      period: "03/2015 - 03/2016",
+      period: "06/2018 - 04/2020",
       title: "Data Analyst",
-      company: "Weston Chase",
-      description: "Developed SQL reports and Power BI dashboards. Performed data cleansing and transformation for ETL workflows. Delivered ad-hoc analytics and business insights.",
-      technologies: ["SQL", "Power BI", "ETL", "Data Analysis"]
+      company: "Roche",
+      description: "Analyzed large datasets using SQL and Python. Developed Power BI and Tableau dashboards. Automated recurring reports, reducing manual effort by 40%.",
+      technologies: ["SQL", "Python", "Excel", "Power BI", "Tableau"]
     }
   ];
 
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/RESUME.pdf';
-    link.download = 'Hason_Shok_Resume.pdf';
+    link.href = '/Afshae_Re_Resume.pdf';
+    link.download = 'Afshae_Re_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -260,9 +223,9 @@ export default function PortfolioV2() {
         <div className="container mx-auto px-4 flex justify-between items-center h-16">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-teal-400 to-indigo-500 flex items-center justify-center text-white font-bold">
-              HS
+              AR
             </div>
-            <span className="font-bold"> Hason Shok </span>
+            <span className="font-bold"> Afshae Re </span>
           </div>
 
           {/* Navigation */}
@@ -358,13 +321,13 @@ export default function PortfolioV2() {
                   className="max-w-4xl mx-auto"
                 >
                   <Badge className="mb-4 bg-blue-500/10 text-blue-500 dark:bg-blue-400/10 dark:text-blue-400 mx-auto">
-                    Lead Data Engineer
+                    Senior Data Engineer
                   </Badge>
                   <h1 className="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                    Lead / Principal <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">Data Engineer</span>
+                    Senior <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">Data Engineer</span>
                   </h1>
                   <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                    Results-driven Lead / Principal Data Engineer with 8+ years of experience designing, building, and optimizing enterprise-scale data platforms, lakehouse architectures, and real-time streaming systems across AWS, Azure, and GCP.
+                    Senior Data Engineer with 7+ years of experience designing, building, and operating scalable, cloud-native data platforms across AWS, Azure, and GCP. Expert in Apache Spark, Kafka, Airflow, dbt, and SQL.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                     <Button
@@ -406,7 +369,7 @@ export default function PortfolioV2() {
                       <Linkedin size={24} />
                     </a>
                     <a
-                      href="mailto:hassonshok@gmail.com"
+                      href="mailto:afshaere@gmail.com"
                       className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors z-20"
                       aria-label="Send Email"
                     >
@@ -426,10 +389,10 @@ export default function PortfolioV2() {
                   About Me
                 </Badge>
                 <h2 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-                  Principal Data Engineer
+                  Senior Data Engineer
                 </h2>
                 <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Proven ability to lead cross-functional engineering teams, modernize legacy data ecosystems, and deliver secure, scalable, high-performance analytics solutions.
+                  Proven track record in end-to-end data platform architecture, migrating legacy systems to cloud-native solutions, and optimizing large-scale ETL/ELT workflows for performance and cost efficiency.
                 </p>
               </div>
 
@@ -444,7 +407,7 @@ export default function PortfolioV2() {
                   >
                     <h3 className="text-2xl font-bold mb-4 text-blue-500 dark:text-blue-400">My Expertise</h3>
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                      Deep expertise in ETL/ELT pipelines, cloud-native data engineering, distributed systems, CDC, big data processing, and workflow orchestration. Strong background in SQL performance tuning, CI/CD automation, Infrastructure as Code (IaC), data governance, data SLAs/SLOs, and cost optimization.
+                      Expert in Apache Spark, Kafka, Airflow, dbt, and SQL. Hands-on experience delivering batch and real-time data pipelines, modern lakehouse and data warehouse architectures, and analytics-ready datasets.
                     </p>
                   </motion.div>
                   <motion.div
@@ -456,7 +419,7 @@ export default function PortfolioV2() {
                   >
                     <h3 className="text-2xl font-bold mb-4 text-purple-500 dark:text-purple-400">My Approach</h3>
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                      I focus on designing metadata-driven frameworks, enforcing data quality/observability, and ensuring security/compliance (HIPAA, GDPR) to build trust in data. I believe in empowering teams through mentorship and standardized engineering practices.
+                      Strong background in data modeling, reliability engineering, CI/CD automation, and governance. I focus on building trusted BI, reporting, and machine learning use cases through resilient, production-grade data systems.
                     </p>
                   </motion.div>
                 </div>
@@ -716,13 +679,13 @@ export default function PortfolioV2() {
                         <div className="p-2 rounded-full bg-white/20">
                           <Mail size={20} />
                         </div>
-                        <span>hassonshok@gmail.com</span>
+                        <span>afshaere@gmail.com</span>
                       </div>
                       <div className="flex items-center gap-4">
                         <div className="p-2 rounded-full bg-white/20">
                           <User size={20} />
                         </div>
-                        <span>(567) 654-3996 | Madera, CA</span>
+                        <span>Woodbridge, VA</span>
                       </div>
                       <div className="flex items-center gap-4">
                         <div className="p-2 rounded-full bg-white/20">

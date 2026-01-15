@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Hason Shok | Lead Data Engineer',
-  description: 'Personal portfolio of Hason Shok, Lead / Principal Data Engineer specializing in Big Data, Lakehouse Architectures, and Real-Time Analytics.',
+  title: 'Afshae Re | Senior Data Engineer',
+  description: 'Personal portfolio of Afshae Re, Senior Data Engineer specializing in Big Data, Lakehouse Architectures, and Real-Time Analytics.',
   generator: 'v0.dev',
   keywords: [
-    'Hason Shok',
+    'Afshae Re',
     'Data Engineer',
     'Big Data',
     'Spark',
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
     'Portfolio'
   ],
   openGraph: {
-    title: 'Hason Shok | Lead Data Engineer',
-    description: 'Lead / Principal Data Engineer specializing in Big Data, Lakehouse Architectures, and Real-Time Analytics.',
+    title: 'Afshae Re | Senior Data Engineer',
+    description: 'Senior Data Engineer specializing in Big Data, Lakehouse Architectures, and Real-Time Analytics.',
     type: 'website',
     url: '#',
-    siteName: 'Hason Shok Portfolio',
+    siteName: 'Afshae Re Portfolio',
   },
   twitter: {
-    title: 'Hason Shok | Lead Data Engineer',
-    description: 'Portfolio of Hason Shok, building scalable, high-performance data platforms.',
+    title: 'Afshae Re | Senior Data Engineer',
+    description: 'Portfolio of Afshae Re, building scalable, high-performance data platforms.',
     card: 'summary_large_image',
     site: '',
   },
